@@ -5,6 +5,7 @@ applications:
   buildpack: https://github.com/venicegeo/binary-ossim-buildpack
   domain: stage.geointservices.io
   memory: 1G
+  disk_quota: 4096M
   instances: 1
   timeout: 180
   env:
