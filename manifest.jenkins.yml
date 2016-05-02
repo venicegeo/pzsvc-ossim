@@ -3,7 +3,6 @@ applications:
   host: pzsvc-ossim
   command: chmod 755 ./pzsvc-ossim.bin && ./pzsvc-ossim.bin ./pzsvc-exec.config
   buildpack: https://github.com/venicegeo/binary-ossim-buildpack
-  domain: stage.geointservices.io
   memory: 1G
   disk_quota: 2G
   instances: 1
