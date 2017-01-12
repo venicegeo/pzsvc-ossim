@@ -5,7 +5,7 @@ applications:
   buildpack: https://github.com/venicegeo/binary-ossim-buildpack
   memory: 3G
   disk_quota: 2G
-  instances: 3
+  instances: 1
   timeout: 180
   env:
     LD_LIBRARY_PATH: "/home/vcap/app/install/lib"
