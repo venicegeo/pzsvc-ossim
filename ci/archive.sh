@@ -9,9 +9,8 @@ mkdir -p $GOPATH $GOPATH/bin
 source $root/ci/vars.sh
 
 go get -v github.com/venicegeo/pzsvc-exec/...
+go get -v github.com/venicegeo/pzsvc-exec/pzsvc-taskworker/...
 
 src=$GOPATH/bin/pzsvc-exec
 mv $src $root/$APP.$EXT
-
-go install $root/pzsvc-exec/pzsvc-taskworker
 mv $GOPATH/bin/pzsvc-taskworker $root/pzsvc-taskworker.bin
