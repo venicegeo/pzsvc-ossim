@@ -12,4 +12,4 @@ applications:
     OSSIM_INSTALL_PREFIX: "/home/vcap/app/install"
     OSSIM_PREFS_FILE: "/home/vcap/app/install/ossim.config"
     PATH: "$PATH:/bin:/usr/bin:/home/vcap/app/install/bin:/home/vcap/app/install/lib"
-    PZ_AUTH: Basic Y2l0ZXN0ZXI6Y2l0ZXN0ZXI=
+    PZ_AUTH: Basic OWE5MmNiZmItNDI5YS00ODkwLTgzYTctM2YxNDBmOTQ3MmY3Og==
