@@ -11,13 +11,12 @@ source $root/ci/vars.sh
 go get -v github.com/venicegeo/pzsvc-exec/...
 go get -v github.com/venicegeo/pzsvc-exec/pzsvc-taskworker/...
 
-src=$GOPATH/bin/pzsvc-exec
-mv $GOPATH/bin/pzsvc-exec $root/pzsvc-ossim.bin
+mv $GOPATH/bin/pzsvc-exec $root/$APP.bin
 mv $GOPATH/bin/pzsvc-taskworker $root/pzsvc-taskworker.bin
 
 cd $root
 
 tar cvzf $APP.$EXT \
     pzsvc-taskworker.bin \
-    pzsvc-ossim.bin
+    $APP.bin
 tar tzf $APP.$EXT
