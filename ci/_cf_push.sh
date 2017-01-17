@@ -16,10 +16,7 @@ fi
 echo ###########################################################################
 
 echo "Requesting new Piazza API key via $PIAZZA_ADDR"
-response=$(curl -s $PIAZZA_ADDR/v2/key -u "$BEACHFRONT_PIAZZA_AUTH")
-echo
-echo "Response:"
-echo $response|sed 's/^/    | /'
+response=$(curl -s https://$PIAZZA_ADDR/v2/key -u "$BEACHFRONT_PIAZZA_AUTH")
 
 piazza_api_key=$(echo $response|grep -oE '\w{8}-\w{4}-\w{4}-\w{4}-\w{12}')
 if [ -z $piazza_api_key ]; then
